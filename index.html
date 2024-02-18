@@ -6,6 +6,7 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/256bdcad12.js" crossorigin="anonymous"></script>
     <title>Bus ticket</title>
 </head>
 <body>
@@ -135,6 +136,25 @@
              </div>
             </div>
        </div>
+        </section>
+
+        <section class="mt-5">
+          <p class="text-2xl font-bold mb-4">Select Your seat</p>
+          <hr class="mt-1">
+          <div class="flex justify-between">
+            <div class="flex gap-3 mt-3">
+              <img src="../seat-green.png" alt="">
+              <p class="text-light">Available</p>
+            </div>
+            <div class="flex gap-3 mt-3">
+              <img src="../seat-green-filled.png" alt="">
+              <p class="text-light text-green-500">Selected</p>
+            </div>
+          </div>
+          <hr class="mt-1">
+          <div class="flex justify-end mt-2">
+             <button class="btn hover:bg-none" disabled><i class="fa-solid fa-gear text-2xl p-3"></i></button>
+          </div>
         </section>
        
     </main>
