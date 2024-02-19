@@ -2,8 +2,9 @@
 let arr = []
 let count = 0
 
-function Tickets(){
-     console.log(seat.classList)
+function Tickets(elementID){
+     background(elementID)
+     
 }
 
 function banner(){ 
@@ -13,6 +14,5 @@ function banner(){
     count = 0;
     arr = []
     setelement('greenline',40)
-    setelement('seat',0)
-    Tickets()
+    setelement('seat', 0)
 }

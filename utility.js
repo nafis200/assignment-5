@@ -12,7 +12,14 @@ function showElementById(elementId){
     element.classList.remove('hidden')
 }
 
-function setelement(elementId, value){
+function setelement(elementId,value){
+    console.log(elementId)
+    console.log(value)
     const element = document.getElementById(elementId)
-    element.innerText = value
+    element.innerText = value;
+}
+
+function background(elementId){
+    const element = document.getElementById(elementId)
+    element.classList.add('bg-green-500')
 }
