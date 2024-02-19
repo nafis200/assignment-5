@@ -66,7 +66,6 @@ function ShowResult(event){
      if(ok > 0 && ok1 > 0){
           re.disabled = false
      }
-     event.target.value = ''
 }
 
 function Tickets(elementID){
@@ -127,6 +126,8 @@ function banner(){
     count = 0;
     arr = []
     ok = 0;
+    const Phone_number = document.getElementById('phone-number')
+    Phone_number.value = ''
     setelement('greenline',40)
     setelement('seat', 0)
 }
