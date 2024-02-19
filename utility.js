@@ -48,3 +48,13 @@ function Setvalue(elementId){
     div.appendChild(p1)
     element.appendChild(div)    
 }
+
+function inputvalue(elementId){
+    const phone = document.getElementById(elementId)
+    const inputvalue = phone.value;
+    const value = parseInt(inputvalue)
+    if(isNaN(value)){
+        return 0;
+    }
+    return value;
+}
