@@ -2,6 +2,7 @@
 let arr = []
 let count = 1
 let ok = 0;
+let ok1 = 0
 function Continue(){
      const items = document.getElementById('div-3')
      let itemsChild = items.children
@@ -57,10 +58,15 @@ function ShowResult(event){
           console.log("please type phone number")
           return
      }
+     const Value = inputvalue('phone-number')
+     if(Value > 0){
+          ok1 = 100
+     }
      const re = document.getElementById('next')
-     if(ok > 0){
+     if(ok > 0 && ok1 > 0){
           re.disabled = false
      }
+     event.target.value = ''
 }
 
 function Tickets(elementID){
@@ -68,6 +74,9 @@ function Tickets(elementID){
      let num1 = getNumber('seat')
      let price = getNumber('price')
      const Value = inputvalue('phone-number')
+     if(Value > 0){
+          ok1 = 100
+     }
      let total = getNumber('total')
      if(count == 4){
           alert('you cant buy more than 4 tickets')
@@ -86,11 +95,17 @@ function Tickets(elementID){
         setelement('total',num5)
         count = count + 1;
         Setvalue('list')
+        if(Value > 0){
+          ok1 = 100
+     }
       }
       if(count == 4){
           const bttn = document.getElementById('bttn');
           bttn.disabled = false
       }
+      if(Value > 0){
+          ok1 = 100
+     }
      
 }
 
@@ -98,8 +113,16 @@ document.addEventListener('keyup',ShowResult)
 
 function banner(){ 
     const bttn = document.getElementById('bttn')
+    bttn.disabled = true
     Hide('headers')
     Hide('footers')
+    Hide('successfull')
+    const place = document.getElementById('input-place')
+    if(place.classList.contains('hiiden')){
+       place.classList.remove('hidden')
+    }
+    const res = document.getElementById('next')
+    res.disabled = true
     showElementById('main-body')
     count = 0;
     arr = []
