@@ -2,6 +2,35 @@
 let arr = []
 let count = 1
 let ok = 0;
+function Continue(){
+     const items = document.getElementById('div-3')
+     let itemsChild = items.children
+     for(const item of itemsChild){
+          const values = item.innerText
+          Removebackground(values)
+     }
+
+     const items1 = document.getElementById('div-4')
+     let items1Child = items1.children
+     for(const item of items1Child){
+          const values = item.innerText
+          Removebackground(values)
+     }
+     const items2 = document.getElementById('div-5')
+     let items2Child = items2.children
+     for(const item of items2Child){
+          const values = item.innerText
+          Removebackground(values)
+     }
+     const items3 = document.getElementById('div-6')
+     let items3Child = items3.children
+     for(const item of items3Child){
+          const values = item.innerText
+          Removebackground(values)
+     }
+     banner()
+    
+}
 
 function final(){
      Hide('main-body')
@@ -74,6 +103,7 @@ function banner(){
     showElementById('main-body')
     count = 0;
     arr = []
+    ok = 0;
     setelement('greenline',40)
     setelement('seat', 0)
 }

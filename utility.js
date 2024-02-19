@@ -73,3 +73,14 @@ function Calculated(elementId,cost){
     }
    return 0
 }
+
+function Removebackground(elementId){
+        const element = document.getElementById(elementId)
+        console.log(element)
+        if(element.classList.contains('bg-green-500')){
+            element.classList.remove('bg-green-500')
+            return
+        }
+        return
+       
+}
