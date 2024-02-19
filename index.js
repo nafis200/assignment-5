@@ -16,6 +16,7 @@ function Tickets(elementID){
         setelement('greenline',num2)
         setelement('seat',num3)
         count = count + 1;
+        Setvalue('list')
      }
 
 }
