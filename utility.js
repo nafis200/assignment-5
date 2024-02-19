@@ -59,10 +59,12 @@ function inputvalue(elementId){
     return value;
 }
 
-function Calculated(elementId){
+function Calculated(elementId,cost){
     const calculate = document.getElementById(elementId)
     const calculatevalue = calculate.value
     if(calculatevalue === 'NEW15'){
-        
-    }
+        let disc = (cost * 15) / 100
+        return disc
+    }    
+
 }

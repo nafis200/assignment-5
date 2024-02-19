@@ -4,7 +4,9 @@ let count = 1
 let ok = 0;
 
 function Discount(){
-     Calculated('input-place')
+     let cost = getNumber('price')
+     let dis = Calculated('input-place',cost)
+     setelement('discounts',dis)
 }
 
 function ShowResult(event){
