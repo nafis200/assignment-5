@@ -10,7 +10,7 @@
     <title>Bus ticket</title>
 </head>
 <body>
-    <header class="">
+    <header class="" id="headers">
       <nav class="ml-20 mr-20">
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -45,7 +45,7 @@
             <h1 class="text-6xl text-white text-center ">End-to-End Travel With<br> <span class="mt-2 text-green-600"> P Paribahan</span> </h1>
             <p class="mt-2 text-center text-white">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
             <br>
-            <button class="p-4 bg-green-400 ml-[600px]">Buy ticket</button>
+            <button onclick="banner()" class="p-4 bg-green-400 ml-[600px]">Buy ticket</button>
         </div>
     </div>
     <div class="">
@@ -83,236 +83,242 @@
          <button class="p-6 bg-gray-200 ml-[685px] mt=5"><span class=" bg-green-400">See all ofers</span> </button>
     </div>
     </header>
-    <main class="mt-5">
-        <section>
-          <div class="bg-[#F7F8F8] ">
-            <div>
-              <h1 class="text-3xl font-bold text-center p-6">P.H paribahan</h1>
-              <p class=" font-light text-center p-6">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
-            </div>
-            <!-- green lane -->
-            <div class="flex ml-36">
-             <div class="bg-white p-6">
-               <div class="flex justify-between bg-white p-4">
-                 <div class="flex">
-                   <div class="">
-                      <img src="bus-logo.png" alt="">
+    <main id="" class="mt-5">
+        <section id="main-body" class="hidden">
+          <section>
+            <div class="bg-[#F7F8F8] ">
+              <div>
+                <h1 class="text-3xl font-bold text-center p-6">P.H paribahan</h1>
+                <p class=" font-light text-center p-6">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+              </div>
+              <!-- green lane -->
+              <div class="flex ml-36">
+               <div class="bg-white p-6">
+                 <div class="flex justify-between bg-white p-4">
+                   <div class="flex">
+                     <div class="">
+                        <img src="bus-logo.png" alt="">
+                     </div>
+                     <div class=" ml-3">
+                        <h1 class="text-2xl font-semibold">Greenline Paribahan </h1>
+                        <p class="font-extralight">Coach-009-Web | AC.bussiness</p>
+                     </div>
+                 </div>
+                 <div class="bg-[#d9fba7] flex w-[200px] p-4">
+                   <img src="seat-green.png" alt="">
+                   <p class=" text-green-600 ml-3"> <span class=" mr-2">40</span>Seats left</p>
+                 </div>
+                 </div>
+                 <div class="">
+                   <div class="flex justify-between p-4 bg-[#F7F8F8]">
+                    <p class="font-extralight">Route</p>
+                    <p class="font-semibold">Dhaka-sylhet</p>
                    </div>
-                   <div class=" ml-3">
-                      <h1 class="text-2xl font-semibold">Greenline Paribahan </h1>
-                      <p class="font-extralight">Coach-009-Web | AC.bussiness</p>
+                   <hr>
+                   <div class="bg-[#F7F8F8] flex justify-between p-4">
+                    <p class="font-extralight">Departure Time</p>
+                    <p class="font-semibold">9.00PM</p>
                    </div>
+                   <div class="bg-[#F7F8F8]">
+                     <button class="btn btn-wide ">Boarding Point -Laximpur</button> 
+                     <button class="btn btn-wide ml-10">Dropping Point-Bogura</button>
+                     <button class="btn btn-wide ml-10">Est.Time-11Hour</button>
+                   </div>
+                </div>
                </div>
-               <div class="bg-[#d9fba7] flex w-[200px] p-4">
-                 <img src="seat-green.png" alt="">
-                 <p class=" text-green-600 ml-3">40 Seats left</p>
+               <div class="bg-white">
+                 <img src="../info-devider.png" alt="">
                </div>
+               <div class="bg-white p-6">
+                  <img src="../fare.png" alt="">
+                  <br>
+                  <p class="font-bold text-3xl">550 Taka</p>
+                  <p class="font-extralight">Per seat</p>
                </div>
-               <div class="">
-                 <div class="flex justify-between p-4 bg-[#F7F8F8]">
-                  <p class="font-extralight">Route</p>
-                  <p class="font-semibold">Dhaka-sylhet</p>
-                 </div>
-                 <hr>
-                 <div class="bg-[#F7F8F8] flex justify-between p-4">
-                  <p class="font-extralight">Departure Time</p>
-                  <p class="font-semibold">9.00PM</p>
-                 </div>
-                 <div class="bg-[#F7F8F8]">
-                   <button class="btn btn-wide ">Boarding Point -Laximpur</button> 
-                   <button class="btn btn-wide ml-10">Dropping Point-Bogura</button>
-                   <button class="btn btn-wide ml-10">Est.Time-11Hour</button>
-                 </div>
               </div>
-             </div>
-             <div class="bg-white">
-               <img src="../info-devider.png" alt="">
-             </div>
-             <div class="bg-white p-6">
-                <img src="../fare.png" alt="">
-                <br>
-                <p class="font-bold text-3xl">550 Taka</p>
-                <p class="font-extralight">Per seat</p>
-             </div>
-            </div>
-       </div>
-        </section>
-        <section class="flex ml-40 space-x-10">
-          <!-- 1 -->
-          <section class="mt-5 p-6">
-            <p class="text-2xl font-bold mb-4">Select Your seat</p>
-            <hr class="mt-1">
-            <div class="flex justify-between">
-              <div class="flex gap-3 mt-3">
-                <img src="../seat-green.png" alt="">
-                <p class="text-light">Available</p>
+         </div>
+          </section>
+          <section class="flex ml-40 space-x-10">
+            <!-- 1 -->
+            <section class="mt-5 p-6">
+              <p class="text-2xl font-bold mb-4">Select Your seat</p>
+              <hr class="mt-1">
+              <div class="flex justify-between">
+                <div class="flex gap-3 mt-3">
+                  <img src="../seat-green.png" alt="">
+                  <p class="text-light">Available</p>
+                </div>
+                <div class="flex gap-3 mt-3">
+                  <img src="../seat-green-filled.png" alt="">
+                  <p class="text-light text-green-500">Selected</p>
+                </div>
               </div>
-              <div class="flex gap-3 mt-3">
-                <img src="../seat-green-filled.png" alt="">
-                <p class="text-light text-green-500">Selected</p>
-              </div>
-            </div>
-            <hr class="mt-1">
-           <section>
-            <div class="flex justify-end mt-2 mb-5">
-              <button class="btn hover:bg-none" disabled><i class="fa-solid fa-gear text-2xl px-1"></i></button>
-           </div>
-            <section class="flex gap-4">
-              <div class=" space-y-4">
-                <div class="div p-4">A</div>
-                <div class="div p-4">B</div>
-                <div class="div p-4">C</div>
-                <div class="div p-4">D</div>
-                <div class="div p-4">E</div>
-                <div class="div p-4">F</div>
-                <div class="div p-4">G</div>
-                <div class="div p-4">H</div>
-                <div class="div p-4">I</div>
-                <div class="div p-4">J</div>
+              <hr class="mt-1">
+             <section>
+              <div class="flex justify-end mt-2 mb-5">
+                <button class="btn hover:bg-none" disabled><i class="fa-solid fa-gear text-2xl px-1"></i></button>
              </div>
-             <div class=" space-y-4">
-               <div id="A1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A1</div>
-               <div id="B1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B1</div>
-               <div id="C1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C1</div>
-               <div id="D1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D1</div>
-               <div id="E1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E1</div>
-               <div id="F1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F1</div>
-               <div id="G1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G1</div>
-               <div id="H1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H1</div>
-               <div id="I1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I1</div>
-               <div id="J1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J1</div>
-             </div>
-             <div class="space-y-4">
-                <div id="A2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A2</div>
-                <div id="B2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B2</div>
-                <div id="C2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C2</div>
-                <div id="D2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D2</div>
-                <div id="E2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E2</div>
-                <div id="F2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F2</div>
-                <div id="G2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G2</div>
-                <div id="H2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H2</div>
-                <div id="I2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I2</div>
-                <div id="J2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J2</div>
-             </div>
-             <div class="space-y-4 ml-4">
-                <div id="A4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A4</div>
-                <div id="B4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B4</div>
-                <div id="C4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C4</div>
-                <div id="D4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D4</div>
-                <div id="E4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E4</div>
-                <div id="F4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F4</div>
-                <div id="G4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G4</div>
-                <div id="H4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H4</div>
-                <div id="I4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I4</div>
-                <div id="J4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J4</div>
-             </div>
-             <div class="space-y-4">
-                <div id="A3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A3</div>
-                <div id="B3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B3</div>
-                <div id="C3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C3</div>
-                <div id="D3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D3</div>
-                <div id="E3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E3</div>
-                <div id="F3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F3</div>
-                <div id="G3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G3</div>
-                <div id="H3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H3</div>
-                <div id="I3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I3</div>
-                <div id="J3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J3</div>
-             </div>
-  
+              <section class="flex gap-4">
+                <div class=" space-y-4">
+                  <div class="div p-4">A</div>
+                  <div class="div p-4">B</div>
+                  <div class="div p-4">C</div>
+                  <div class="div p-4">D</div>
+                  <div class="div p-4">E</div>
+                  <div class="div p-4">F</div>
+                  <div class="div p-4">G</div>
+                  <div class="div p-4">H</div>
+                  <div class="div p-4">I</div>
+                  <div class="div p-4">J</div>
+               </div>
+               <div class=" space-y-4">
+                 <div id="A1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A1</div>
+                 <div id="B1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B1</div>
+                 <div id="C1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C1</div>
+                 <div id="D1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D1</div>
+                 <div id="E1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E1</div>
+                 <div id="F1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F1</div>
+                 <div id="G1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G1</div>
+                 <div id="H1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H1</div>
+                 <div id="I1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I1</div>
+                 <div id="J1" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J1</div>
+               </div>
+               <div class="space-y-4">
+                  <div id="A2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A2</div>
+                  <div id="B2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B2</div>
+                  <div id="C2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C2</div>
+                  <div id="D2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D2</div>
+                  <div id="E2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E2</div>
+                  <div id="F2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F2</div>
+                  <div id="G2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G2</div>
+                  <div id="H2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H2</div>
+                  <div id="I2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I2</div>
+                  <div id="J2" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J2</div>
+               </div>
+               <div class="space-y-4 ml-4">
+                  <div id="A4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A4</div>
+                  <div id="B4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B4</div>
+                  <div id="C4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C4</div>
+                  <div id="D4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D4</div>
+                  <div id="E4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E4</div>
+                  <div id="F4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F4</div>
+                  <div id="G4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G4</div>
+                  <div id="H4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H4</div>
+                  <div id="I4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I4</div>
+                  <div id="J4" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J4</div>
+               </div>
+               <div class="space-y-4">
+                  <div id="A3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">A3</div>
+                  <div id="B3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">B3</div>
+                  <div id="C3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">C3</div>
+                  <div id="D3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">D3</div>
+                  <div id="E3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">E3</div>
+                  <div id="F3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">F3</div>
+                  <div id="G3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">G3</div>
+                  <div id="H3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">H3</div>
+                  <div id="I3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">I3</div>
+                  <div id="J3" class="p-4 bg-gray-300 w-16 hover:bg-blue-400 cursor-pointer">J3</div>
+               </div>
+    
+              </section>
+             </section>
             </section>
-           </section>
-          </section>
-          <!-- 2 -->
-          <section class="mt-16 p-6">
-            <img src="../info-devider.png" alt="">
-            <img src="../info-devider.png" alt="">
-            
-          </section>
-          <!-- 3 -->
-          <section class="mt-5 p-6">
-            <p class="text-2xl font-bold mb-4">Select Your seat</p>
-            <hr class="mb-2">
-          <section class="bg-[#F7F8F8] p-8">
-            <div class="flex space-x-10">
-              <div>
-                 <p class="text-bold">Seat <span class=" bg-green-400 text-white px-1">2</span></p>
+            <!-- 2 -->
+            <section class="mt-16 p-6">
+              <img src="../info-devider.png" alt="">
+              <img src="../info-devider.png" alt="">
+              
+            </section>
+            <!-- 3 -->
+            <section class="mt-5 p-6">
+              <p class="text-2xl font-bold mb-4">Select Your seat</p>
+              <hr class="mb-2">
+            <section class="bg-[#F7F8F8] p-8">
+              <div class="flex space-x-10">
+                <div>
+                   <p class="text-bold">Seat <span id="seat" class=" bg-green-400 text-white px-1">0</span></p>
+                </div>
+                <div>
+                   <p class="text-bold">Class</p>
+                </div>
+                <div>
+                  <p class="text-bold ml-8">Price</p>
+                </div>
               </div>
+              <hr class="mt-2">
               <div>
-                 <p class="text-bold">Class</p>
+                      
+                <div>
+                  <div class="flex space-x-10">
+                     <h1 class="text-light p-2">C2</h1>
+                     <p class="text-light text-center p-2">Economy</p>
+                     <p class="text-light p-2">550</p>
+                  </div>
+               </div>
+               <div>
+                  <div class="flex space-x-10">
+                     <h1 class="text-light p-2">C2</h1>
+                     <p class="text-light text-center p-2">Economy</p>
+                     <p class="text-light p-2">550</p>
+                  </div>
+               </div>
+                  
               </div>
-              <div>
-                <p class="text-bold ml-8">Price</p>
-              </div>
+             
+             <div class="flex mt-8 gap-32">
+               <h1 class="text-3xl font-bold">Total Price</h1>
+               <h1 class="text-3xl font-bold">BDT <span>1100</span> </h1>
+             </div>
+             <div class="w-1/2 mt-5">
+              <label class="input input-bordered flex items-center gap-1">
+                <input type="text" class="grow" placeholder="Have any Coupons" />
+                <button class="btn btn-success ml-6" disabled>Apply</button>
+              </label>
+             </div>
+             <div class="flex mt-8 gap-36">
+              <h1 class="text-3xl font-bold">Discount</h1>
+              <h1 class="text-3xl font-bold">BDT<span> 00</span></h1>
             </div>
+             <div class="flex mt-8 gap-28">
+              <h1 class="text-3xl font-bold">Grand total</h1>
+              <h1 class="text-3xl font-bold">BDT<span> 00</span></h1>
+            </div>
+            </section>
             <hr class="mt-2">
-            <div>
-               <div class="flex space-x-10">
-                  <h1 class="text-light p-2">C2</h1>
-                  <p class="text-light text-center p-2">Economy</p>
-                  <p class="text-light p-2">550</p>
-               </div>
-            </div>
-            <div>
-               <div class="flex space-x-10">
-                  <h1 class="text-light p-2">C2</h1>
-                  <p class="text-light text-center p-2">Economy</p>
-                  <p class="text-light p-2">550</p>
-               </div>
-            </div>
-           
-           <div class="flex mt-8 gap-32">
-             <h1 class="text-3xl font-bold">Total Price</h1>
-             <h1 class="text-3xl font-bold">BDT <span>1100</span> </h1>
-           </div>
-           <div class="w-1/2 mt-5">
-            <label class="input input-bordered flex items-center gap-1">
-              <input type="text" class="grow" placeholder="Have any Coupons" />
-              <button class="btn btn-success ml-6">Apply</button>
-            </label>
-           </div>
-           <div class="flex mt-8 gap-36">
-            <h1 class="text-3xl font-bold">Discount</h1>
-            <h1 class="text-3xl font-bold">BDT<span> 00</span></h1>
-          </div>
-           <div class="flex mt-8 gap-28">
-            <h1 class="text-3xl font-bold">Grand total</h1>
-            <h1 class="text-3xl font-bold">BDT<span> 00</span></h1>
-          </div>
-          </section>
-          <hr class="mt-2">
-           <section class="p-8">
-            <label class="form-control w-full max-w-xs ">
-              <div class="label">
-                <span class="label-text font-bold">Passenger Name*</span>
+             <section class="p-8">
+              <label class="form-control w-full max-w-xs ">
+                <div class="label">
+                  <span class="label-text font-bold">Passenger Name*</span>
+                </div>
+                <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+              </label>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text font-bold">Phone Number*</span>
+                </div>
+                <input type="number" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+              </label>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text font-bold">Email ID</span>
+                </div>
+                <input type="email" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
+              </label>
+              <div>
+                <button class="btn w-full max-w-xs mt-5 bg-green-500 text-white" disabled>Next</button>
               </div>
-              <input type="text" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
-            </label>
-            <label class="form-control w-full max-w-xs">
-              <div class="label">
-                <span class="label-text font-bold">Phone Number*</span>
+              <div class="mt-2">
+                <a href="" class="text-light hover:bg-red-600"><span class="text-light underline underline-offset-2">Terms and conditions</span></a>
+                <a href="" class="text-light hover:bg-red-600"><span class="text-light ml-7 underline underline-offset-2">Cancellitation policy</span></a>
               </div>
-              <input type="number" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
-            </label>
-            <label class="form-control w-full max-w-xs">
-              <div class="label">
-                <span class="label-text font-bold">Email ID</span>
-              </div>
-              <input type="email" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
-            </label>
-            <div>
-              <button class="btn w-full max-w-xs mt-5 bg-green-500 text-white" disabled>Next</button>
-            </div>
-            <div class="mt-2">
-              <a href="" class="text-light hover:bg-red-600"><span class="text-light underline underline-offset-2">Terms and conditions</span></a>
-              <a href="" class="text-light hover:bg-red-600"><span class="text-light ml-7 underline underline-offset-2">Cancellitation policy</span></a>
-            </div>
-           </section>
+             </section>
+            </section>
           </section>
         </section>
 
         <!-- success -->
 
-        <section class="">
+        <section class="hidden">
             <div class="">
                <img src="../success.png" class="ml-[750px]" alt="">
                <p class="text-3xl font-bold text-green-500 text-center ml-24 mt-5">SUCCESS</p>
@@ -326,7 +332,7 @@
         </section>
       
     </main>
-    <footer class="mt-5">
+    <footer id="footers" class="mt-5">
       <footer class="footer p-10 bg-neutral text-neutral-content">
         <nav>
           <h6 class="footer-title">Services</h6> 
@@ -365,3 +371,4 @@
     <script src="index.js"></script>
 </body>
 </html>
+
