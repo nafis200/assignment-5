@@ -22,6 +22,7 @@ function background(elementId){
     element.classList.add('bg-green-500')
 }
 
+
 function getNumber(elementId){
      const element = document.getElementById(elementId)
      const elementvalue = element.innerText
@@ -65,6 +66,10 @@ function Calculated(elementId,cost){
     if(calculatevalue === 'NEW15'){
         let disc = (cost * 15) / 100
         return disc
-    }    
-
+    }   
+    if(calculatevalue === 'Couple20'){
+        let disc1 = (cost * 20) / 100;
+        return disc1
+    }
+   return 0
 }

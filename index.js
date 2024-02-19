@@ -3,10 +3,24 @@ let arr = []
 let count = 1
 let ok = 0;
 
+function final(){
+     Hide('main-body')
+     showElementById('successfull')
+}
+
 function Discount(){
      let cost = getNumber('price')
      let dis = Calculated('input-place',cost)
-     setelement('discounts',dis)
+     if(dis == 0){
+          alert('your coupon code is wrong please try again')
+     }
+     else{
+          setelement('discounts',dis)
+          let discount_price = cost - dis
+          setelement('total',discount_price)
+          document.getElementById('div1').classList.add('hidden')
+     }
+
 }
 
 function ShowResult(event){

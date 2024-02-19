@@ -254,7 +254,7 @@
                <h1 class="text-3xl font-bold">Total Price</h1>
                <h1 class="text-3xl font-bold">BDT <span id="price">00</span> </h1>
              </div>
-             <div class="w-1/2 mt-5">
+             <div class="w-1/2 mt-5" id="div1">
               <label class="input input-bordered flex items-center gap-1">
                 <input type="text" id="input-place" class="grow" placeholder="Have any Coupons" />
                 <button id="bttn" onclick="Discount()" class="btn btn-success ml-6" disabled>Apply</button>
@@ -290,7 +290,7 @@
                 <input type="email" placeholder="Enter your name" class="input input-bordered w-full max-w-xs" />
               </label>
               <div>
-                <button id="next" class="btn w-full max-w-xs mt-5 bg-green-500 text-white" disabled>Next</button>
+                <button onclick="final()" id="next" class="btn w-full max-w-xs mt-5 bg-green-500 text-white" disabled>Next</button>
               </div>
               <div class="mt-2">
                 <a href="" class="text-light hover:bg-red-600"><span class="text-light underline underline-offset-2">Terms and conditions</span></a>
@@ -303,7 +303,7 @@
 
         <!-- success -->
 
-        <section class="hidden">
+        <section class="hidden" id="successfull">
             <div class="">
                <img src="../success.png" class="ml-[750px]" alt="">
                <p class="text-3xl font-bold text-green-500 text-center ml-24 mt-5">SUCCESS</p>
