@@ -13,8 +13,6 @@ function showElementById(elementId){
 }
 
 function setelement(elementId,value){
-    console.log(elementId)
-    console.log(value)
     const element = document.getElementById(elementId)
     element.innerText = value;
 }
@@ -22,4 +20,12 @@ function setelement(elementId,value){
 function background(elementId){
     const element = document.getElementById(elementId)
     element.classList.add('bg-green-500')
+}
+
+function getNumber(elementId){
+     const element = document.getElementById(elementId)
+     const elementvalue = element.innerText
+     const value = parseInt(elementvalue)
+     return value;
+     
 }
