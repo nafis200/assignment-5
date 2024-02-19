@@ -58,3 +58,11 @@ function inputvalue(elementId){
     }
     return value;
 }
+
+function Calculated(elementId){
+    const calculate = document.getElementById(elementId)
+    const calculatevalue = calculate.value
+    if(calculatevalue === 'NEW15'){
+        
+    }
+}

@@ -3,7 +3,15 @@ let arr = []
 let count = 1
 let ok = 0;
 
-function ShowResult(){
+function Discount(){
+     Calculated('input-place')
+}
+
+function ShowResult(event){
+     if(event.target.value === ''){
+          console.log("please type phone number")
+          return
+     }
      const re = document.getElementById('next')
      if(ok > 0){
           re.disabled = false
@@ -15,6 +23,7 @@ function Tickets(elementID){
      let num1 = getNumber('seat')
      let price = getNumber('price')
      const Value = inputvalue('phone-number')
+     let total = getNumber('total')
      if(count == 4){
           alert('you cant buy more than 4 tickets')
      }
@@ -29,11 +38,15 @@ function Tickets(elementID){
         setelement('greenline',num2)
         setelement('seat',num3)
         setelement('price',num5)
+        setelement('total',num5)
         count = count + 1;
         Setvalue('list')
-       
-     }
-
+      }
+      if(count == 4){
+          const bttn = document.getElementById('bttn');
+          bttn.disabled = false
+      }
+     
 }
 
 document.addEventListener('keyup',ShowResult)
